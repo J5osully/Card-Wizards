@@ -1,7 +1,6 @@
-/*first commit*/
 using System;
 
-namespace HelloWorldApp {
+namespace std {
     static void Main(srtring[] args)
     { 
         
