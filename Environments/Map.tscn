@@ -7,7 +7,7 @@
 [node name="Map" type="Node2D"]
 
 [node name="WorldMap" type="Sprite2D" parent="."]
-position = Vector2(1461, -564)
+position = Vector2(596, 276)
 scale = Vector2(10, 10)
 texture = ExtResource("1_r5vjc")
 
