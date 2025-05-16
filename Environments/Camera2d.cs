@@ -10,7 +10,7 @@ public partial class Camera2d : Camera2D
 
 	public override void _Process(double delta)
 	{
-		float AMOUNT = 5;
+		float AMOUNT = 20;
 
 		if (Input.IsKeyPressed(Key.W))
 			Position += new Vector2(0, -AMOUNT);
