@@ -8,14 +8,14 @@
 
 [node name="WorldMap" type="Sprite2D" parent="."]
 position = Vector2(1461, -564)
-scale = Vector2(12, 12)
+scale = Vector2(10, 10)
 texture = ExtResource("1_r5vjc")
 
 [node name="Player" parent="." instance=ExtResource("2_b4wr5")]
-position = Vector2(538, 251)
-scale = Vector2(0.1, 0.1)
+position = Vector2(594, 243)
+scale = Vector2(5, 5)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(30, 220)
+position = Vector2(-1.60001, 16.4)
 scale = Vector2(10, 10)
 script = ExtResource("3_r5vjc")
