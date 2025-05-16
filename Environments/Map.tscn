@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxx2mfuogakwi"]
+
+[ext_resource type="Texture2D" uid="uid://24n7bq80lqu3" path="res://Graphics/Player/wizard.webp" id="1_wu6yh"]
+[ext_resource type="Script" uid="uid://qtd6g32bkbw1" path="res://Environments/Player.cs" id="2_b4wr5"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(556, 332)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wu6yh")
+script = ExtResource("2_b4wr5")
