@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxx2mfuogakwi"]
+[gd_scene load_steps=4 format=3 uid="uid://dxx2mfuogakwi"]
 
-[ext_resource type="Texture2D" uid="uid://24n7bq80lqu3" path="res://Graphics/Player/wizard.webp" id="1_wu6yh"]
-[ext_resource type="Script" uid="uid://qtd6g32bkbw1" path="res://Environments/Player.cs" id="2_b4wr5"]
+[ext_resource type="Texture2D" uid="uid://b2bfum08b7ukm" path="res://Graphics/fantasyBackground.webp" id="1_r5vjc"]
+[ext_resource type="PackedScene" uid="uid://cr7jofw48ek8u" path="res://Graphics/Player/player.tscn" id="2_b4wr5"]
+[ext_resource type="Script" uid="uid://dallv58cihi68" path="res://Environments/Camera2d.cs" id="3_r5vjc"]
 
 [node name="Map" type="Node2D"]
 
-[node name="Player" type="Sprite2D" parent="."]
-position = Vector2(556, 332)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("1_wu6yh")
-script = ExtResource("2_b4wr5")
+[node name="WorldMap" type="Sprite2D" parent="."]
+position = Vector2(1461, -564)
+scale = Vector2(12, 12)
+texture = ExtResource("1_r5vjc")
+
+[node name="Player" parent="." instance=ExtResource("2_b4wr5")]
+position = Vector2(538, 251)
+scale = Vector2(0.1, 0.1)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(30, 220)
+scale = Vector2(10, 10)
+script = ExtResource("3_r5vjc")
